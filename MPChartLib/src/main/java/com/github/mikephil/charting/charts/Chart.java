@@ -1588,7 +1588,7 @@ public abstract class Chart<T extends ChartData<? extends IDataSet<? extends Ent
         long currentTime = System.currentTimeMillis();
 
         File extBaseDir = Environment.getExternalStorageDirectory();
-        File file = new File(extBaseDir.getAbsolutePath() + "/DCIM/" + subFolderPath);
+        File file = new File(subFolderPath);
         if (!file.exists()) {
             if (!file.mkdirs()) {
                 return false;
